@@ -25,6 +25,7 @@ app.get("/",function(req,res){
                 const imageurl="https://openweathermap.org/img/wn/" + icon + "@2x.png"
                 res.write("<p>weather-report currently " + a +" </p>");
                 res.write("<h1>the temperature in " + city + " is: " + temp + " degree celsius</h1>");
+                // connecting image src 
                 res.write("<img src=" + imageurl + ">");
                 res.send();
                 
